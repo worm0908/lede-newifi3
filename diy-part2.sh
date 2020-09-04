@@ -17,5 +17,5 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 sed -i 's/\+luci-theme-bootstrap/+luci-theme-atmaterial/g' feeds/luci/collections/luci/Makefile
 sed -i 's/bootstrap/atmaterial_Brown/g' feeds/luci/modules/luci-base/root/etc/config/luci
 
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
