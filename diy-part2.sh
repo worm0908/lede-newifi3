@@ -17,6 +17,8 @@
 #rm -rf package/kenzok8
 
 # Passwall from kenzok8
+[ -e package/openwrt-packages ] && rm -rf package/openwrt-packages
+[ -e package/small ] && rm -rf package/small
 git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 git clone https://github.com/kenzok8/small package/small
 
