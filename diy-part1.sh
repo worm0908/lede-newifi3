@@ -11,7 +11,7 @@
 #
 
 # Init a feed source
-sed -i '12,$d' feeds.conf.default
+#sed -i '12,$d' feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
