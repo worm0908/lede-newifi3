@@ -27,10 +27,10 @@
 #sed -i 's/$ssd${1:+\ --\ "$@"}/$ssd${1:+ -- ${@}}/' package/base-files/files/lib/functions/service.sh
 
 # Passwall from kenzok8
-[ -e package/openwrt-packages ] && rm -rf package/openwrt-packages
-[ -e package/small ] && rm -rf package/small
-git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
-git clone https://github.com/kenzok8/small package/small
+#[ -e package/openwrt-packages ] && rm -rf package/openwrt-packages
+#[ -e package/small ] && rm -rf package/small
+#git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
+#git clone https://github.com/kenzok8/small package/small
 
 # 更改默认设置'
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
