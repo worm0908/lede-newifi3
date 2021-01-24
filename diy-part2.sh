@@ -11,28 +11,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# 添加atmaterial主题'
-#[ -e package/lean/luci-theme-atmaterial ] && rm -rf package/lean/luci-theme-atmaterial
-#git clone https://github.com/kenzok8/openwrt-packages package/kenzok8
-#mv package/kenzok8/luci-theme-atmaterial package/lean
-#rm -rf package/kenzok8
-
-# 添加lua-maxminddb依赖'
-#[ -e package/lean/lua-maxminddb ] && rm -rf package/lean/lua-maxminddb
-#git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
-# 添加Hellow world'
-#[ -e package/lean/luci-app-vssr ] && rm -rf package/lean/luci-app-vssr
-#git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
-
-# 更改 /lib/functions/service.sh，修正vssr启动kcptun问题
-#sed -i 's/$ssd${1:+\ --\ "$@"}/$ssd${1:+ -- ${@}}/' package/base-files/files/lib/functions/service.sh
-
-# Passwall from kenzok8
-#[ -e package/openwrt-packages ] && rm -rf package/openwrt-packages
-#[ -e package/small ] && rm -rf package/small
-#git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
-#git clone https://github.com/kenzok8/small package/small
-
 # 更改默认IP和主机名
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/RT-SY/g' package/base-files/files/bin/config_generate
