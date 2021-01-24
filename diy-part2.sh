@@ -35,7 +35,7 @@
 
 # 更改默认IP和主机名
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
-sed -i 's/OpenWrt/RT-HOME/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/RT-SY/g' package/base-files/files/bin/config_generate
 # 更改默认主题为atmaterial_Brown
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 sed -i 's/\+luci-theme-bootstrap/+luci-theme-atmaterial/g' feeds/luci/collections/luci/Makefile
