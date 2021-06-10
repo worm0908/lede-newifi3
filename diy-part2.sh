@@ -11,6 +11,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# 删除多余的包
+
+
 # 更改默认IP和主机名
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/RT-SY/g' package/base-files/files/bin/config_generate
