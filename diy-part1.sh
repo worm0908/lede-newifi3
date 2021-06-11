@@ -11,7 +11,7 @@
 #
 
 # Add a feed source
-if [[ `grep -qiE "kenzo8" feeds.conf.default` -eq 1 ]] ; then
-  sed -i 'src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-  sed -i 'src-git small https://github.com/kenzok8/small' feeds.conf.default
-fi
+#if [[ `grep -qiE "kenzo8" feeds.conf.default` -eq 1 ]] ; then
+#  sed -i 'src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#  sed -i 'src-git small https://github.com/kenzok8/small' feeds.conf.default
+#fi
